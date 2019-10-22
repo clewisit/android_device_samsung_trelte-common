@@ -353,6 +353,19 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+# MicroG Packages
+PRODUCT_PACKAGES += \
+FDroid \
+privapp-permissions-org.fdroid.fdroid.privileged.xml \
+FDroidPrivilegedExtension \
+privapp-permissions-com.android.vending.xml \
+FakeStore \
+privapp-permissions-com.google.android.gms.xml \
+GmsCore \
+GsfProxy \
+MozillaNlpBackend \
+NominatimNlpBackend
+
 # Vendor
 $(call inherit-product, vendor/samsung/trelte-common/trelte-common-vendor.mk)
 
